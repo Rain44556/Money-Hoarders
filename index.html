@@ -30,7 +30,7 @@
         </div>
     
         <!--  Expenses and Balance part -->
-        <div class="col-lg-5 bg-red-100 mt-10 me-10 p-8 rounded">
+        <div class="col-lg-5 bg-red-100 shadow-lg mt-10 me-10 p-8 rounded">
     
             <!-- income -->
             <div class=" row g-3 justify-content-center">
@@ -39,7 +39,7 @@
                     <label for="inputPassword6" class="col-form-label font-medium">Income:</label>
                   </div>
                   <div class="col-auto">
-                    <input type="text" class="form-control" id="exampleInputText" aria-describedby="textHelp">
+                    <input type="text" class="form-control" id="input-income" aria-describedby="textHelp">
                   </div>
               </div>
     
@@ -52,7 +52,7 @@
                     <label for="inputPassword6" class="col-form-label font-medium">Food:</label>
                   </div>
                   <div class="col-auto">
-                    <input type="text" class="form-control" id="exampleInputText" aria-describedby="textHelp">
+                    <input type="text" class="form-control" id="input-food" aria-describedby="textHelp">
                   </div>
                   </div>
                   
@@ -63,22 +63,23 @@
                     <label for="inputPassword6" class="col-form-label font-medium">Rent:</label>
                   </div> <br>
                   <div class="col-auto">
-                    <input type="text" class="form-control" id="exampleInputText" aria-describedby="textHelp">
+                    <input type="text" class="form-control" id="input-rent" aria-describedby="textHelp">
                   </div>
                   </div>
     
-                           <!-- cloths -->
+                           <!-- clothes -->
                            <div class="row g-3 justify-content-center mt-3">
                    <div class="col-auto">
-                    <label for="inputPassword6" class="col-form-label font-medium">cloths:</label>
+                    <label for="inputPassword6" class="col-form-label font-medium">clothes:</label>
                   </div> 
                   <div class="col-auto">
-                    <input type="text" class="form-control" id="exampleInputText" aria-describedby="textHelp">
+                    <input type="text" class="form-control" id="input-clothes" aria-describedby="textHelp">
                   </div> 
                   </div>
             
+                  <!-- calculate button -->
                   <div class="row align-center mt-4">
-                    <button type="button" class="btn btn-primary bg-primary calculate-button w-40 fw-bold">Calculate</button>
+                    <button onclick="calculateButton()" type="button" class="btn btn-primary bg-primary calculate-button w-40 fw-bold">Calculate</button>
                 </div>
             
             
@@ -103,9 +104,10 @@
 
 
     </div>
-        
     </div>
         </section>
     </main>
+
+    <script src="js/assignment.js"></script>
 </body>
 </html>
