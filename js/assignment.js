@@ -1,3 +1,7 @@
+
+
+// balance and expenses
+
 function calculateButton() {
   const income = parseFloat(document.getElementById("input-income").value);
   const food = parseFloat(document.getElementById("input-food").value);
@@ -28,6 +32,8 @@ const T_Balance=document.getElementById("tBalance");
 T_Balance.innerText=savings;
 console.log(T_Balance);
 }
+
+// saving and remaining
 
 
 function saveAmount(){
