@@ -92,15 +92,15 @@
                        <div class="saving-button">
                         <div class="d-grid gap-3 d-md-block mt-3">
                             <label for="inputPassword6" class="col-form-label font-medium">Save:</label>
-                            <button class="btn btn-primary bg-primary pe-5 ps-5 " type="button">10</button>
+                            <button class="btn btn-primary bg-primary pe-5 ps-5 "type="button">10</button>
                             <span class="justify-content-center"> % </span>
-                            <button class="btn btn-primary bg-primary pe-5 ps-5" type="button">Save</button>
+                            <button onclick="saveAmount()" class="btn btn-primary bg-primary pe-5 ps-5" type="button">Save</button>
                           </div>   
                        </div>
             
                        <!-- saving and remaining -->
-                       <p class="fw-bold mt-3 mb-2 text-center"> Saving Amount:<span> </span></p>
-                       <p class="fw-bold text-center">Remaining Balance:<span> </span></p>
+                       <p class="fw-bold mt-3 mb-2 text-center"> Saving Amount:<span id="Amount"> </span></p>
+                       <p class="fw-bold text-center">Remaining Balance:<span id="remaining"> </span></p>
 
 
     </div>
