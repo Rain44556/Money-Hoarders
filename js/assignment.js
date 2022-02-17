@@ -7,6 +7,8 @@ function calculateButton() {
 const savings= income - (food+rent+clothes);
 const expenses=(food + rent+ clothes);
 
+
+      // error handeling;
 if((typeof income==='string') || (typeof food==='string') || (typeof rent==='string') || (typeof clothes==='string') ){
     alert("enter a number");
     return;
@@ -16,6 +18,8 @@ if(savings<0){
     alert("your expenses is greater than income");
      return;
 }
+
+
 const T_Expenses=document.getElementById("tExpense");
 T_Expenses.innerText=expenses;
 console.log(T_Expenses);
