@@ -3,8 +3,8 @@
 // balance and expenses
 
 function calculateButton() {
-  const income = parseFloat(document.getElementById("input-income").value);
-  const food = parseFloat(document.getElementById("input-food").value);
+  const income = parseInt(document.getElementById("input-income").value);
+  const food = parseInt(document.getElementById("input-food").value);
   const rent = parseFloat(document.getElementById("input-rent").value);
   const clothes = parseFloat(document.getElementById("input-clothes").value);
 
@@ -44,8 +44,12 @@ function saveAmount(){
     const clothes = parseFloat(document.getElementById("input-clothes").value);
   
   const theAmount= income - (food+rent+clothes);
-  const sV= (theAmount/100)*10;
-  const remaining = theAmount-sV;
+  const sV= (income/100)*10;
+  if(sV>theAmount){
+alert("you can not save enough money");
+ return;
+  }
+  const remaining = income-sV;
   const saveAmountH= document.getElementById("Amount");
   saveAmountH.innerText= sV;
   const remainingBalance=document.getElementById("remaining");

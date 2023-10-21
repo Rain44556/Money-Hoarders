@@ -3,9 +3,11 @@
   margin: auto;
   height: 800px;
 }
+
 .calculate-button {
   margin-left: 210px;
 }
+
 .saving-button {
   margin-left: 100px;
 }
@@ -14,6 +16,7 @@
   .calculate-button {
     margin-left: 110px;
   }
+
   .saving-button {
     margin-left: 90px;
   }
