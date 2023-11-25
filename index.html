@@ -8,12 +8,15 @@
   <title>Money Master</title>
 
   <!-- css-stylesheet -->
-  <link rel="stylesheet" href="assignment.css">
+  <link rel="stylesheet" href="money.css">
+
   <!-- framework-tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- framework-bootstrap only -->
+
+  <!-- framework-bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -28,12 +31,12 @@
       <div class="row">
 
         <!-- image section -->
-        <div class="col-lg-5 mt-7 p-10 shadow-sm">
+        <div class="col-lg-5 mt-14 p-10 shadow-lg img-section">
           <img src="image/money.jpg" alt="">
         </div>
 
         <!--  Expenses and Balance part -->
-        <div class="col-lg-6 bg-red-100 shadow-lg mt-10 me-10 p-10 rounded">
+        <div class="expenses col-lg-6 bg-red-100 shadow-lg mt-5 ml-10 p-20 rounded">
 
           <!-- income -->
           <div class=" row g-3 justify-content-center">
@@ -61,9 +64,9 @@
 
 
           <!-- Rent -->
-          <div class="row g-3 justify-content-center mt-1">
+          <div class="row g-2 justify-content-center mt-1">
             <div class=" col-auto">
-              <label for="inputPassword6" class="col-form-label font-medium">Rental:</label>
+              <label for="inputPassword6" class="col-form-label font-medium">Rentals:</label>
             </div> <br>
             <div class="col-auto">
               <input type="text" class="form-control" id="input-rent" aria-describedby="textHelp">
@@ -71,40 +74,26 @@
           </div>
 
           <!-- clothes -->
-          <div class="row g-3 justify-content-center mt-1">
+          <div class="row g-2 justify-content-center mt-1">
             <div class="col-auto">
-              <label for="inputPassword6" class="col-form-label font-medium">Clothe:</label>
+              <label for="inputPassword6" class="col-form-label font-medium">Clothes:</label>
             </div>
             <div class="col-auto">
               <input type="text" class="form-control" id="input-clothes" aria-describedby="textHelp">
             </div>
           </div>
 
+
           <!-- calculate button -->
-          <div class="row align-center mt-4">
+          <div class="calculate-button container min-w-full flex flex-col items-center">
             <button onclick="calculateButton()" type="button"
-              class="btn btn-primary bg-primary calculate-button w-40 fw-bold">Calculate</button>
+              class=" btn btn-primary bg-primary w-60 mt-4 p-2 fw-bold ">CALCULATE</button>
           </div>
 
 
           <!-- Total -->
           <p class="fw-bold mt-3 mb-2 text-center"> Total Expenses:<span id="tExpense"> </span></p>
-          <p class="fw-bold text-center">Balance:<span id="tBalance"> </span></p>
-
-
-          <!-- save -->
-          <div class="saving-button">
-            <div class="d-grid gap-3 d-md-block mt-3">
-              <label for="inputPassword6" class="col-form-label font-medium">Save:</label>
-              <button class="btn btn-primary bg-primary pe-5 ps-5 " type="button">10</button>
-              <span class="justify-content-center"> % </span>
-              <button onclick="saveAmount()" class="btn btn-primary bg-primary pe-5 ps-5" type="button">Save</button>
-            </div>
-          </div>
-
-          <!-- saving and remaining -->
-          <p class="fw-bold mt-3 mb-2 text-center"> Saving Amount:<span id="Amount"> </span></p>
-          <p class="fw-bold text-center">Remaining Balance:<span id="remaining"> </span></p>
+          <p class="fw-bold text-center">Remainig Balance:<span id="tBalance"> </span></p>
 
 
         </div>
@@ -112,7 +101,7 @@
     </section>
   </main>
 
-  <script src="js/assignment.js"></script>
+  <script src="js/calculation.js"></script>
 </body>
 
 </html>
